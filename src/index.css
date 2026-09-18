@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-background: #051424;
+    --bg-surface: #051424;
+    --bg-surface-dim: #051424;
+    --bg-surface-bright: #2c3a4c;
+    --bg-surface-lowest: #010f1f;
+    --bg-surface-low: #0d1c2d;
+    --bg-surface-container: #122131;
+    --bg-surface-high: #1c2b3c;
+    --bg-surface-highest: #273647;
+    --bg-surface-variant: #273647;
+    
+    --text-on-background: #d4e4fa;
+    --text-on-surface: #d4e4fa;
+    --text-on-surface-variant: #c6c6ce;
+    
+    --color-primary: #bfc5e4;
+    --color-on-primary: #292f48;
+    --color-primary-container: #0a1128;
+    --color-on-primary-container: #767c99;
+    
+    --color-secondary: #b8c6ec;
+    --color-on-secondary: #22304e;
+    --color-secondary-container: #394666;
+    --color-on-secondary-container: #a7b5da;
+    
+    --color-tertiary: #93ccff;
+    --color-on-tertiary: #003351;
+    --color-tertiary-container: #001423;
+    --color-on-tertiary-container: #0284c7;
+    
+    --color-outline: #909098;
+    --color-outline-variant: #46464d;
+    
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-error-container: #93000a;
+    --color-on-error-container: #ffdad6;
+  }
+
+  html.light {
+    --bg-background: #f4f6fb;
+    --bg-surface: #ffffff;
+    --bg-surface-dim: #e9eef7;
+    --bg-surface-bright: #ffffff;
+    --bg-surface-lowest: #ffffff;
+    --bg-surface-low: #f8fafc;
+    --bg-surface-container: #edf2f9;
+    --bg-surface-high: #e2e8f0;
+    --bg-surface-highest: #cbd5e1;
+    --bg-surface-variant: #e2e8f4;
+    
+    --text-on-background: #0f172a;
+    --text-on-surface: #0f172a;
+    --text-on-surface-variant: #475569;
+    
+    --color-primary: #1e3a8a;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #dbeafe;
+    --color-on-primary-container: #1e40af;
+    
+    --color-secondary: #243c5a;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #dce4f2;
+    --color-on-secondary-container: #0f233f;
+    
+    --color-tertiary: #0284c7;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #e0f2fe;
+    --color-on-tertiary-container: #0369a1;
+    
+    --color-outline: #94a3b8;
+    --color-outline-variant: #cbd5e1;
+    
+    --color-error: #dc2626;
+    --color-on-error: #ffffff;
+    --color-error-container: #fee2e2;
+    --color-on-error-container: #991b1b;
+  }
+}
+
+@theme {
+  --color-background: var(--bg-background);
+  --color-surface: var(--bg-surface);
+  --color-surface-dim: var(--bg-surface-dim);
+  --color-surface-bright: var(--bg-surface-bright);
+  --color-surface-container-lowest: var(--bg-surface-lowest);
+  --color-surface-container-low: var(--bg-surface-low);
+  --color-surface-container: var(--bg-surface-container);
+  --color-surface-container-high: var(--bg-surface-high);
+  --color-surface-container-highest: var(--bg-surface-highest);
+  --color-surface-variant: var(--bg-surface-variant);
+  
+  --color-on-background: var(--text-on-background);
+  --color-on-surface: var(--text-on-surface);
+  --color-on-surface-variant: var(--text-on-surface-variant);
+  
+  --color-primary: var(--color-primary);
+  --color-on-primary: var(--color-on-primary);
+  --color-primary-container: var(--color-primary-container);
+  --color-on-primary-container: var(--color-on-primary-container);
+  
+  --color-secondary: var(--color-secondary);
+  --color-on-secondary: var(--color-on-secondary);
+  --color-secondary-container: var(--color-secondary-container);
+  --color-on-secondary-container: var(--color-on-secondary-container);
+  
+  --color-tertiary: var(--color-tertiary);
+  --color-on-tertiary: var(--color-on-tertiary);
+  --color-tertiary-container: var(--color-tertiary-container);
+  --color-on-tertiary-container: var(--color-on-tertiary-container);
+  
+  --color-outline: var(--color-outline);
+  --color-outline-variant: var(--color-outline-variant);
+  
+  --color-error: var(--color-error);
+  --color-on-error: var(--color-on-error);
+  --color-error-container: var(--color-error-container);
+  --color-on-error-container: var(--color-on-error-container);
+
+  --font-data-mono: "Courier Prime", monospace;
+  --font-body: "Public Sans", sans-serif;
+  --font-headline: "Public Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.font-data-mono {
+  font-family: var(--font-data-mono);
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
